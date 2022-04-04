@@ -6,8 +6,8 @@ require_relative 'item' #落下物用
 
 
 def hit(player, bomb) #当たり判定
-    diffx = player.x - bomb.x
-    diffy = player.y - bomb.y
+    diffx = player.centerx - bomb.centerx
+    diffy = player.centery - bomb.centery
 
     if (diffx > -20) and (diffx < 20) and (diffy > -20) and (diffy < 20)
         return true
