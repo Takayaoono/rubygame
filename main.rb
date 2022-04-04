@@ -5,9 +5,9 @@ require_relative 'player' #player用
 require_relative 'item' #落下物用
 
 
-def hit(player, bomb) #当たり判定
-    diffx = player.centerx - bomb.centerx
-    diffy = player.centery - bomb.centery
+def hit(player, virus) #当たり判定
+    diffx = player.centerx - virus.centerx
+    diffy = player.centery - virus.centery
 
     if (diffx > -20) and (diffx < 20) and (diffy > -20) and (diffy < 20)
         return true
